@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#define COMEÇO -200
+#define COMECO -200
 #define FIM 200
 
 int main(void) {
@@ -19,7 +19,7 @@ int main(void) {
   p = (int *) malloc(sizeof(int)*col*lin);
   
   for(i=0;i<(lin*col);i++){
-    *(p+i) = COMEÇO + rand() % (FIM+1-COMEÇO);
+    *(p+i) = COMECO + rand() % (FIM+1-COMECO);
   }
 
 
@@ -31,10 +31,11 @@ int main(void) {
  }
 
   //diagonal principal 
+  printf("\nDiagonal Principal =>");
   for (i=0; i<lin*lin; i+=(lin+1)){
     printf("%d ", *(p+i));
   }
-  puts("");
+  puts("\n");
 
 
   return 0;

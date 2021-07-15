@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#define COMEÇO 82
+#define COMECO 82
 #define FIM 237
 
 int main(void) {
@@ -18,7 +18,7 @@ int main(void) {
   }
   
   for(i =0;i<x;i++){
-    *(p+i) = COMEÇO + rand() % (FIM+1-COMEÇO); // intervalo definido do vetor
+    *(p+i) = COMECO + rand() % (FIM+1-COMECO); // intervalo definido do vetor
   }
 
   int s = 0;
