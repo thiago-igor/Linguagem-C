@@ -31,11 +31,21 @@ int main(void) {
  }
 
   //diagonal principal 
-  printf("\nDiagonal Principal =>");
-  for (i=0; i<lin*lin; i+=(lin+1)){
+  printf("\nDiagonal Principal:\n");
+  for (i=0; i<lin*col; i+=(lin+1)){
+    printf("%d ", *(p+i));
+  }
+  puts("");
+
+
+  //diagonal secundaria 
+  printf("diagonal secundaria:\n");
+  for (i=(lin*col)-1; i>=0; i-=(lin+1)){
     printf("%d ", *(p+i));
   }
   puts("\n");
+
+  free(p);
 
 
   return 0;

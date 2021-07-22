@@ -20,17 +20,3 @@ int main(void) {
   for(i =0;i<x;i++){
     *(p+i) = COMECO + rand() % (FIM+1-COMECO); // intervalo definido do vetor
   }
-
-  int s = 0;
-  printf("vetor gerado:\n");
-  for(i=0;i<x;i++){
-    printf("%d,",*(p+i));// lendo vetor
-    s = s + *(p+i);// somando elementos
-  }
-
-  printf("\nsoma dos elementos:[%d]",s);
-
-  free(p);
-  
-  return 0;
-}
