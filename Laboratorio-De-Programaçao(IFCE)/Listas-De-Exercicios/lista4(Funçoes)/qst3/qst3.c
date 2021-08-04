@@ -31,7 +31,7 @@ int main(int argc, char * argv[]) {
 
 printf("\nmenor valor do vetor: %d",menor);
 
-printf("\nEndereco do menor valor do vetor: [%p]",EnderecoMenorValor(p,tam));
+EnderecoMenorValor(p,tam);
   
 free(p);
   
@@ -69,6 +69,8 @@ int k;
 
 int *EnderecoMenorValor(int *p, int t){
     int k, *pm, menor;
+    int v[2];
+    int *pma, maior;
 
     menor = *p; // valor
     pm = p; // endereço
@@ -77,11 +79,26 @@ int *EnderecoMenorValor(int *p, int t){
         if(menor>*(p+k)){
             menor = *(p+k);
             pm = (p+k);
+            v[0]= pm;
         }
 
-    return pm;
+
+    maior = *p;
+    pma = p;
+
+    for(k=0;k<t;k++){
+        if(maior<*(p+k)){
+            maior = *(p+k);
+            pma = (p+k);
+            v[1]=pma;
+        }
+
+    
+
+    return;
     
     }
+
 
 
 
