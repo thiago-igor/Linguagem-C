@@ -16,6 +16,7 @@ int main(void) {
   scanf("%d",&n);
 
   v = malloc(sizeof(int)*n); // calculando o tamanho do vetor com malloc
+  
 
   if(!v){  // quando nao tem memoria suficiente v recebe NULL, logo se v == NULL ele faz o if  
     printf("nao tem memoria suficiente");
