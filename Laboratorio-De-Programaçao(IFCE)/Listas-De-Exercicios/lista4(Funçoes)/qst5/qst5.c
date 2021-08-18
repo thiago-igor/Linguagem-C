@@ -21,10 +21,9 @@ int main(int argc, char * argv[]){
     if(p == NULL){
         printf("memoria insuficiente!!!");
         exit(2);
+    }
 
-    preencher(p,tam)
-
-
+    preencher(p,tam);
 
     return 0;
 }
@@ -37,3 +36,4 @@ void preencher(int *p,int t){ // funçao para preencher o vetor
         *(p+k) = rand() % MX;
     }
 }
+
