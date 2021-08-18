@@ -26,6 +26,11 @@ int main(int argc, char * argv[]){ // usa argc e argv para saber o tamanho do ve
 
     p = (int *) malloc(tam * sizeof(int)); // reservando espaço para o vetor 
 
+    if(p == NULL){
+        printf("memoria insuficiente!!!");
+        exit(2);
+    }
+
     preencher(p,tam);
 
     printf("vetor =>");
@@ -42,7 +47,8 @@ int main(int argc, char * argv[]){ // usa argc e argv para saber o tamanho do ve
 
     printf("\nMedia => %.2f",res);
 
-
+    
+    free(p);
 
     return 0;
 }
