@@ -6,7 +6,9 @@
 void preencher(int *, int );
 void ler( int *, int);
 void obtmenor(int*pv, int , int *);
+void obtmaior(int *, int , int *);
 int *EnderecoMenorValor(int *, int );
+int *End_maior(int *, int);
 
 int main(int argc, char * argv[]) {
 
@@ -18,7 +20,9 @@ int main(int argc, char * argv[]) {
   int tam = atoi(argv[1]);
   int *p = (int *) malloc(tam * sizeof(int));
   int menor;
+  int maior;
   int end_menor;
+  int end_maior;
 
   preencher(p,tam);
   
@@ -28,10 +32,15 @@ int main(int argc, char * argv[]) {
 
   obtmenor(p,tam,&menor);
 
+  obtmaior(p,tam,&maior);
+
 
 printf("\nmenor valor do vetor: %d",menor);
+printf("\nmaior valor do vetor: %d",maior);
 
-EnderecoMenorValor(p,tam);
+
+printf("\nEndereco do maior valor do vetor: [%p]",End_maior(p,tam));
+printf("\nEndereco do menor valor do vetor: [%p]",EnderecoMenorValor(p,tam));
   
 free(p);
   
@@ -67,10 +76,36 @@ int k;
   }
 }
 
+void obtmaior(int *p, int t, int *pm){
+    int k;
+    *pm = *p;
+    for(k=0;k<t;k++){
+        if(*pm < *(p+k)){
+            *pm = *(p+k);
+        }
+    }
+
+}
+
+
+int *End_maior(int *p, int t){
+        int k, maior;
+        int *pm;
+        maior = *p; // valor
+        pm = p; // endereço 
+        for(k=0;k<t;k++){
+            if(maior<*(p+k)){
+                maior = *(p+k);
+                pm = (p+k);
+            }
+        }
+        return pm;
+    }
+
+
+
 int *EnderecoMenorValor(int *p, int t){
     int k, *pm, menor;
-    int v[2];
-    int *pma, maior;
 
     menor = *p; // valor
     pm = p; // endereço
@@ -79,27 +114,10 @@ int *EnderecoMenorValor(int *p, int t){
         if(menor>*(p+k)){
             menor = *(p+k);
             pm = (p+k);
-            v[0]= pm;
         }
 
-
-    maior = *p;
-    pma = p;
-
-    for(k=0;k<t;k++){
-        if(maior<*(p+k)){
-            maior = *(p+k);
-            pma = (p+k);
-            v[1]=pma;
-        }
-
-    
-
-    return;
+    return pm;
     
     }
-
-
-
 
 }
