@@ -5,10 +5,13 @@
 
 
 void preencher(int *, int );
+void ler(int *, int );
+int soma(int * ,int );
 
 int main(int argc, char * argv[]){
 
     int tam, *p = NULL;
+    int res;
 
     if(argc !=2){
         printf("formato incorreto <tamanho do vetor>");
@@ -25,6 +28,13 @@ int main(int argc, char * argv[]){
 
     preencher(p,tam);
 
+    printf("vetro =>");
+    ler(p,tam);
+
+    res = soma(p,tam);
+
+    printf("\nsoma dos elementos e => %d\n",res);
+
     return 0;
 }
 
@@ -36,4 +46,22 @@ void preencher(int *p,int t){ // funçao para preencher o vetor
         *(p+k) = rand() % MX;
     }
 }
+
+void ler(int *p, int t){
+    int k;
+    for(k=0;k<t;k++){
+        printf("%d,",*(p+k));
+    }
+}
+
+int soma(int *p ,int t){
+    int k;
+    int soma=0;
+
+    for(k=0;k<t;k++){
+        soma += *(p+k);
+    }
+    return soma;
+}
+
 
