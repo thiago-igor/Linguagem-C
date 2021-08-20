@@ -41,3 +41,4 @@ void preencher (my_ts *p){
 void ler(my_ts *p){
     printf("(%d + %d) / 2 => %.2f",p->x,p->y,p->media);
 }
+
