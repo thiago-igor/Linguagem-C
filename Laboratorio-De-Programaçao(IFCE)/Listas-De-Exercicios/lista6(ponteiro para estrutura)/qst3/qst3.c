@@ -1,47 +1,49 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include<time.h>
-#define TAM 3
-#define MX 100
+#include<stdlib.h>
+#include <time.h>
+#define MX 50
+#define TAM 4
 
-struct Node{
+typedef struct node {
     int x;
     int y;
     float media;
-};
+}my_ts; //  IMPORTANTE => obs: my_ts = (struct node)
 
-void media(struct Node *);
+void Media(my_ts *);
 
 int main(){
-    // struct node v[TAM];
-    struct Node *pv = NULL;
     int k;
+    // my_ts v[TAM]; essa seria a maneira de fazer um vetor sem usar o ponteiro 
+    my_ts *c = NULL;
 
     srand(time(NULL));
+    
+    c = (my_ts *) malloc(sizeof(my_ts)*TAM);
 
-    pv = (struct Node *) malloc(sizeof(struct Node));
+    if(c == NULL){
+        printf("memoria insuficiente!!!");
+        exit(1);
+    }
 
     for(k=0;k<TAM;k++){
-        (pv+k)->x = rand() % MX;
-        (pv+k)->y = rand() % MX;
-        media(pv+k);
+        (c+k)->x = rand()% MX;
+        (c+k)->y = rand()% MX;
+        Media(c+k);
     }
-
-    
 
     for(k=0; k<TAM;k++){
-        printf("estrutura [%d]:\n",k);
-        printf("x: %d\n",(pv+k)->x);
-        printf("y: %d\n",(pv+k)->y);
-        printf("media => %.2f\n",(pv+k)->media);
+        printf("\n-----------\n");
+        printf("\nEstrutura[%d]",k);
+        printf("\nx => %d",(c+k)->x);
+        printf("\nY => %d",(c+k)->y);
+        printf("\nMedia => %.2f",(c+k)->media);
     }
-    
-    
-    
+
 
     return 0;
 }
 
-void media(struct Node *p){
-    p->media = (p->x + p->y)/2.0;
+void Media(my_ts *p){
+    p->media = (p->x + p->y) / 2.0;
 }
