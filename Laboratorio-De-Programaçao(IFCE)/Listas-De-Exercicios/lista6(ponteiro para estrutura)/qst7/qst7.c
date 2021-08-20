@@ -1,4 +1,4 @@
-// abrange um espaço na memoria para todas as variaveis em um so canto, ou seja, une 
+// abrange um espaço na memoria para todas as variaveis em um so canto, ou seja, une
 // exemplo:
 #include <stdio.h>
 
