@@ -7,7 +7,7 @@ int main(int argc, char * argv[]){
     char str[80];
 
     if (argc != 2){
-        printf("formato: <nomeArquivo>\n",argv[0]);
+        printf("formato: <nomeArquivo>\n");
         exit(1);
     }
 
@@ -28,7 +28,7 @@ int main(int argc, char * argv[]){
 
     }while(*str != '\n');
 
-    // REPOSICIONAR O INDICADOR DE ARQUIVO:
+    // REPOSICIONAR O INDICADOR DE ARQUIVO PARA O INICIO:
     rewind(fp);
 
     //LEITURA DOS DADOS DO ARQUIVO:
