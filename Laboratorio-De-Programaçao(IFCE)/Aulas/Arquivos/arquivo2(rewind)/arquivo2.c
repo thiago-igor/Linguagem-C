@@ -24,7 +24,7 @@ int main(int argc, char * argv[]){
         puts("digite uma string:\n");
         fgets(str,79,stdin);
         //strcat(str,"\n");
-        fputs(str,fp);
+        fputs(str,fp);  // puts : escrever string no arquivo
 
     }while(*str != '\n');
 
