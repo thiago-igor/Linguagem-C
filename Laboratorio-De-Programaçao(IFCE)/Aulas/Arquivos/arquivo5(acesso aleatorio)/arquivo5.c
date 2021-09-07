@@ -1,5 +1,4 @@
 // acessar um numero da sequencia de fibonat
-
 #include <stdio.h>
 #include <stdlib.h>
 #define TAM 10
@@ -30,12 +29,14 @@ if(!(fp = fopen("fib.dat","w+"))){
 //escrita no arquivo
 if((fwrite(v, sizeof(int), TAM, fp)) != TAM){
     printf("erro!!!");
+    exit(2);
 }
 
 //reposicionar ponteito
 //rewind(fp);
 fseek(fp, 9*sizeof(int),SEEK_SET); // esse nove esta mostrando a posiçao que quero, a 9
 
+//leitura
 fread(&b, sizeof(int),1,fp);
 
 printf("\nvalor lido: %d\n",b);
