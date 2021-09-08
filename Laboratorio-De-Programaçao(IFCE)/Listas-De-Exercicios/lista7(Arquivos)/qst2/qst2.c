@@ -35,5 +35,22 @@ int main(){
         fprintf(fp,"------------\n");
     }
 
+    char a;
+    int r;
+    puts("Deseja Atualizar O Sistema?");
+    puts("Digite, Para Sim: [s] ");
+    puts("Digite Para Nao: [n]");
+    scanf("%c",&a);
+
+    if(a=='s' || a=='S'){
+        printf("Digite o numero do Registro[0-99]:");
+        scanf("%d",&r);
+        if(v[r].registro==0){
+            v[r].registro;
+            printf("registro => %d",v[r].registro);
+        }
+    }
+
+
     return 0;
 }

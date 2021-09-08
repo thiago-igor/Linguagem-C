@@ -44,7 +44,7 @@ int main(int argc, char *argv[]){
         exit(6);
     }
 
-    //IMPRIMIR ARQUIVOS
+    //IMPRIMIR ARQUIVOS LIDOS
     printf("%lf -- %d \n", dr, ir);
 
     printf("%lu---%lu ", sizeof(double), sizeof(int));
