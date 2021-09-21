@@ -1,3 +1,6 @@
+/*Faça um programa em C que gere um vetor com 100 n ́umeros inteiros pseudoaleat ́orios no intervalo
+definido pelo usuario e apresente esse vetor ordenado (crescente). Faça uma vers ̃ao com o m ́etodo
+de ordenacao por seleçao e outra pelo m ́etodo bolha (bubble sort).*/
 #include <stdio.h>
 #include<time.h>
 #include<stdlib.h>

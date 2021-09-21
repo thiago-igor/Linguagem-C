@@ -1,4 +1,6 @@
-// fazendo string e percorrendo
+// Faça um programa em C que leia uma string e um caracter do usuario e informe se a string de
+//entrada contem o caracter fornecido. 
+
 #include <stdio.h>
 #define TAM 20
 

@@ -1,3 +1,5 @@
+//Fa ̧ca um programa em C que leia duas strings do usu ́ario e informe se elas s ̃ao iguais. Fa ̧ca uma
+//vers ̃ao com o uso da fun ̧c ̃ao strcmp() e outra sem.
 #include <stdio.h>
 #include <string.h>
 #define TAM 20

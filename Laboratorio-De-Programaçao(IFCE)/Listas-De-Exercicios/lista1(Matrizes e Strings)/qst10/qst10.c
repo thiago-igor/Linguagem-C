@@ -1,3 +1,5 @@
+/*Faça um programa que leia uma matriz bidimensional do usu ́ario, de dimens ̃ao 3x3, e apresente os
+elementos da diagonal principal.*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>

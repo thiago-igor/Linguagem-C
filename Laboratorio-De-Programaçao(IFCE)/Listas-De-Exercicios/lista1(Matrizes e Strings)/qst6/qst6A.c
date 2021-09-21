@@ -1,3 +1,6 @@
+//Faça um programa em C que concatene duas strings recebidas pelo usuario. Construa uma versão
+//com uso da funcao com strcat() e outra sem.
+
 // concatenar (unir) duas strings sem usar a funçao strcat()
 #include <stdio.h>
 #include<string.h>

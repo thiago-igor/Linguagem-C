@@ -1,3 +1,4 @@
+// Faça um programa em C que leia um vetor de inteiros com 15 elementos e apresenta a sua soma.
 #include <stdio.h>
 #define TAM 15
 

@@ -1,3 +1,6 @@
+// Faça um programa em C que leia uma string do usuario e informe a quantidade de caracteres da
+//string fornecida. N ̃ao use a funcao strlen().
+
 #include <stdio.h>
 #define TAM 20
 
