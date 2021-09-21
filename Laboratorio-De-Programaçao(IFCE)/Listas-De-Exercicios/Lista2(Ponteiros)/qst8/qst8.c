@@ -1,3 +1,4 @@
+//Escreva um programa que busque um caracter fornecido em uma string utilizando ponteiros.
 #include <stdio.h>
 #define TAM 15
 

@@ -1,3 +1,4 @@
+//Implemente o metodo de ordenação bolha utilizando ponteiros.
 #include <stdio.h>
 #include<time.h>
 #include<stdlib.h>

@@ -1,3 +1,4 @@
+//Escreva um programa que concatene duas strings utilizando ponteiros.
 #include <stdio.h>
 #include <string.h>
 #define TAM 10

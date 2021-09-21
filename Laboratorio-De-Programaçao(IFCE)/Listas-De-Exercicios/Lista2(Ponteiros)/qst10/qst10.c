@@ -1,4 +1,8 @@
-// o vetor f[TAM] e preenxido assim: f[0] = quantos zeros tem no vetor x[NUM], f[1] = quantos 1 tem no vetor x[NUM]... assim ate acabar o vetor f[TAM], ou seja, percorremos o vetor x[NUM] para achar o vetor f[TAM]
+/*Escreva um programa que gere um vetor X com n ́umeros pseudoaleat ́orios no intervalo [0,N − 1].
+Crie um vetor F com N posi ̧c ̃oes e armazene em cada posi ̧c ̃ao de F a quantidade de ocorrˆencias
+dos elementos de X.*/
+
+/* o vetor f[TAM] e preenxido assim: f[0] = quantos zeros tem no vetor x[NUM], f[1] = quantos 1 tem no vetor x[NUM]... assim ate acabar o vetor f[TAM], ou seja, percorremos o vetor x[NUM] para achar o vetor f[TAM]*/
 
 #include <stdio.h>
 #include <time.h>

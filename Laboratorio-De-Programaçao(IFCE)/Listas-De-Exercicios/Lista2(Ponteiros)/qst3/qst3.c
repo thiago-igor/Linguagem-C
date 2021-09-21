@@ -1,3 +1,6 @@
+/*Escreva um programa que solicite iterativamente um n ́umero do usu ́ario e imprima sempre o menor
+valor fornecido. Crie um crit ́erio para finaliza ̧c ̃ao do programa. Utilize ponteiros.*/
+
 #include <stdio.h>
 #define linha "\n-------------------------\n"
 

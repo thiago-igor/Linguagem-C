@@ -1,3 +1,4 @@
+//Escreva um programa que copie uma string para outra usando ponteiros.
 #include <stdio.h>
 #define TAM 12
 

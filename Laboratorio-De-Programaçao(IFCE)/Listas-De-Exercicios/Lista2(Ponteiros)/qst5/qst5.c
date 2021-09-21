@@ -1,3 +1,4 @@
+//Escreva um programa que encontre o tamanho de uma string fornecida. Utilize ponteiros.
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
