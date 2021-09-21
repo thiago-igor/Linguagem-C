@@ -1,3 +1,5 @@
+/*Escreva um programa em C que modifique a Quest ̃ao 1 para conter um array com 3 alunos. Escreva
+uma funçao para calcular a media dos alunos.*/
 #include <stdio.h>
 #define TAM 3
 #define linha "\n------------------------\n"

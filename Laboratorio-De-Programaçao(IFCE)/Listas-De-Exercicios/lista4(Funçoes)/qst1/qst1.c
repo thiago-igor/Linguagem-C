@@ -1,3 +1,6 @@
+/*Escreva um programa que receba dois valores por linha de execuçao e realize a soma ou multi-
+plicaçao, conforme um codigo de opera ̧c ̃ao tambem recebido por linha de execuçao.*/
+
 #include <stdio.h>
 #include <stdlib.h>
 

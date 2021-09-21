@@ -1,4 +1,4 @@
-// media pedida na questao => (tamanho do vet - menor numero) / (maior numero - menor numero)
+// media pedida na questao => (tamanho do vet - menor numero) dividido por (maior numero - menor numero)
 
 #include <stdio.h>
 #include <stdlib.h>

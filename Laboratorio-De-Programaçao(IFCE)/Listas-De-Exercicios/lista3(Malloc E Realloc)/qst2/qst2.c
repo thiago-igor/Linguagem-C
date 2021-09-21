@@ -1,3 +1,6 @@
+/*Escreva um programa que imprima a diagnonal principal de uma matriz NxN de inteiros, dado
+que N  ́e fornecida pelo usu ́ario. Os valores de N devem ser aleat ́orios e estar contidos no intervalo
+[-200, 200].*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>

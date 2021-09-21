@@ -1,3 +1,6 @@
+/*Modifique a quest ̃ao anterior criando uma fun ̧c ̃ao que armazena em um vetor os endere ̧cos do menor
+e do maior elemento do vetor.*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>

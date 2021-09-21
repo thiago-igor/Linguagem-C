@@ -1,3 +1,5 @@
+/*Escreva um programa em C que informe o endere ̧co do menor elemento de um vetor de inteiros
+gerado. A quantidade de elementos desse array deve ser fornecido por linha de comando.*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>

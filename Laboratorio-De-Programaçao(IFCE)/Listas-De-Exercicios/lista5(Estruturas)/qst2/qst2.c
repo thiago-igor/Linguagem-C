@@ -1,3 +1,6 @@
+/*Escreva um programa em C que utilize uma Estrutura estoque que cont ́em uma string com o
+nomePeca, um n ́umero inteiro para identificar o n ́umero da pe ̧ca, o pre ̧co em ponto flutuante e um
+elemento inteiro para identificar o n ́umero do pedido.*/
 #include <stdio.h>
 
 struct estoque {

@@ -1,3 +1,6 @@
+/*Escreva um programa que some todos os elementos de um vetor de inteiros alocado dinamicamente.
+A quantidade de elementos devem ser fornecidas pelo usuario. Os valores do vetor devem pertencer
+ao intervalo [82, 237]. Utilize a funçao rand() para alimentar o vetor com valores pseudo-aleatorios.*/
 #include <stdio.h>
 #include <stdlib.h>
 #define COMECO 82

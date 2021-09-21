@@ -1,3 +1,6 @@
+/*Escreva um programa em C que apresente a m ́edia, a mediana e a moda de um vetor de inteiros
+gerados aleatoriamente em tempo de execuçao.*/
+
 #include<stdio.h>
 #include <stdlib.h>
 #include <time.h>

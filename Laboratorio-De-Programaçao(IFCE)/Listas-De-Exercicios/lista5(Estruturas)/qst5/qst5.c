@@ -1,3 +1,6 @@
+/*Crie uma Estrutura disciplina em que um dos campos corresponde tamb ́em a uma estrutura pro-
+fessor.*/
+
 #include <stdio.h>
 
 struct diciplina {
