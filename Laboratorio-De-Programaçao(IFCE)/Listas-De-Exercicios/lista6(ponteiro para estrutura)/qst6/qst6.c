@@ -1,3 +1,5 @@
+//Exemplifique, com codigo, Enumeraçoes em C.
+
 #include <stdio.h>
 
 enum diasSemana{
