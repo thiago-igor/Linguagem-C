@@ -6,6 +6,9 @@ Pesquise sobre a organiza ̧c ̃ao de um arquivo csv.*/
 
 #define TAM 50
 
+/*Escreva um programa em C que leia dados de diferentes usu ́arios e grave em um arquivo csv.
+Pesquise sobre a organiza ̧c ̃ao de um arquivo csv.*/
+
 int main(){
     FILE *fp;
     char nome[TAM];
